@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "3141274157",
+    "firebase_url": "https://tastyvn-abf74.firebaseio.com",
+    "project_id": "tastyvn-abf74",
+    "storage_bucket": "tastyvn-abf74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3141274157:android:95b82be91063fce1",
+        "android_client_info": {
+          "package_name": "com.example.huyle.tastyvn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3141274157-4qe9q4im2n4jj7dfpu2fc73nic9jm2bk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.huyle.tastyvn",
+            "certificate_hash": "1c3da52eaa339c07638c7d0c4771e9ead05db00d"
+          }
+        },
+        {
+          "client_id": "3141274157-amaphbc6q39jutti1taan9l7tsfthrub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvp-86ig9OQ5tjaCu7OMW9xDPVG0DwW1M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3141274157-amaphbc6q39jutti1taan9l7tsfthrub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
