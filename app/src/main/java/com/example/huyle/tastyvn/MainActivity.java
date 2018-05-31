@@ -2,6 +2,7 @@ package com.example.huyle.tastyvn;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +18,8 @@ import com.google.firebase.database.ValueEventListener;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     FirebaseDatabase database;
+    String[] data;
+    int j;
     int data1,data2,data3,data4,data5,data6,data7,data8,data9,data10;
     TextView txtView;
     Button table1;
@@ -57,51 +60,73 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         table10.setOnClickListener(this);
 
 
+
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        table1.setBackgroundColor(0xFFFFBB33);
+        table2.setBackgroundColor(0xFFFFBB33);
+        table3.setBackgroundColor(0xFFFFBB33);
+        table4.setBackgroundColor(0xFFFFBB33);
+        table5.setBackgroundColor(0xFFFFBB33);
+        table6.setBackgroundColor(0xFFFFBB33);
+        table7.setBackgroundColor(0xFFFFBB33);
+        table8.setBackgroundColor(0xFFFFBB33);
+        table9.setBackgroundColor(0xFFFFBB33);
+        table10.setBackgroundColor(0xFFFFBB33);
+
         FirebaseDatabase.getInstance().getReference().child("Requests")
-                .addListenerForSingleValueEvent(new ValueEventListener() {
+                .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
 
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             Request request = snapshot.getValue(Request.class);
+//                            for(j=1;j<=10;j++) {
+//                                if(request.getAddress().equals(Integer.toString(j)) && request.getStatus().equals("0")) {
+//                                    data[j] = "1";
+//                                }
+//                            }
 
-                            if(request.getAddress().equals("1")) {
+                            if(request.getAddress().equals("1") && request.getStatus().equals("0")) {
                                 table1.setBackgroundColor(Color.RED);
                                 data1 = 1;
                             }
-                            if(request.getAddress().equals("2")) {
+                            if(request.getAddress().equals("2") && request.getStatus().equals("0")) {
                                 table2.setBackgroundColor(Color.RED);
                                 data2 = 1;
                             }
-                            if(request.getAddress().equals("3")) {
+                            if(request.getAddress().equals("3") && request.getStatus().equals("0")) {
                                 table3.setBackgroundColor(Color.RED);
                                 data3 = 1;
                             }
-                            if(request.getAddress().equals("4")) {
+                            if(request.getAddress().equals("4") && request.getStatus().equals("0")) {
                                 table4.setBackgroundColor(Color.RED);
                                 data4 = 1;
                             }
-                            if(request.getAddress().equals("5")) {
+                            if(request.getAddress().equals("5") && request.getStatus().equals("0")) {
                                 table5.setBackgroundColor(Color.RED);
                                 data5 = 1;
                             }
-                            if(request.getAddress().equals("6")) {
+                            if(request.getAddress().equals("6") && request.getStatus().equals("0")) {
                                 table6.setBackgroundColor(Color.RED);
                                 data6 = 1;
                             }
-                            if(request.getAddress().equals("7")) {
+                            if(request.getAddress().equals("7") && request.getStatus().equals("0")) {
                                 table7.setBackgroundColor(Color.RED);
                                 data7 = 1;
                             }
-                            if(request.getAddress().equals("8")) {
+                            if(request.getAddress().equals("8") && request.getStatus().equals("0")) {
                                 table8.setBackgroundColor(Color.RED);
                                 data8 = 1;
                             }
-                            if(request.getAddress().equals("9")) {
+                            if(request.getAddress().equals("9") && request.getStatus().equals("0")) {
                                 table9.setBackgroundColor(Color.RED);
                                 data9 = 1;
                             }
-                            if(request.getAddress().equals("10")) {
+                            if(request.getAddress().equals("10") && request.getStatus().equals("0")) {
                                 table10.setBackgroundColor(Color.RED);
                                 data10 = 1;
                             }

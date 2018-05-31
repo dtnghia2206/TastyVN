@@ -10,6 +10,7 @@ import android.widget.ListView;
 import com.example.huyle.tastyvn.Model.Request;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
@@ -82,6 +83,10 @@ public class ListActivity extends AppCompatActivity {
                         OrderList adapter = new OrderList(ListActivity.this, foodname, image, price, quality);
                         list = (ListView) findViewById(R.id.list);
                         list.setAdapter(adapter);
+
+                        DatabaseReference mDatabase;
+                        mDatabase = FirebaseDatabase.getInstance().getReference();
+                        mDatabase.child("Requests").child(table_address).child("status").setValue("1");
                     }
 
                     @Override

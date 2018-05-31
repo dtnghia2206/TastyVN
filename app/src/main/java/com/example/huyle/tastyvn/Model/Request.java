@@ -11,11 +11,11 @@ public class Request {
     public Request() {
     }
 
-    public Request(String address, String total, List<Order> foods) {
+    public Request(String address, String total, List<Order> foods, String status) {
         this.address = address;
         this.total = total;
         this.foods = foods;
-        this.status = "0";
+        this.status = status;
     }
 
     public String getStatus() {
