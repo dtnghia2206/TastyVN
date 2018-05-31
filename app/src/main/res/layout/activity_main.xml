@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundwood"
     tools:context=".MainActivity">
 
     <Button
@@ -64,14 +65,13 @@
     <Button
         android:layout_width="224dp"
         android:layout_height="100dp"
+        android:layout_alignEnd="@+id/table7"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="22dp"
-        android:layout_toStartOf="@+id/table3"
         android:background="@android:drawable/spinner_background"
         android:backgroundTint="@android:color/holo_red_light"
         android:text="Exit"
-        android:textAlignment="center"
 
+        android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -110,5 +110,13 @@
         android:layout_alignParentEnd="true"
         android:background="@android:color/holo_orange_light"
         android:text="table 10" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="346dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/kitchen" />
 
 </RelativeLayout>

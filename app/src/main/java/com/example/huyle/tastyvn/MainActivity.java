@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button table9;
     Button table10;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,7 +65,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             Request request = snapshot.getValue(Request.class);
 
-//                            txtView.setText(request.getAddress());
                             if(request.getAddress().equals("1")) {
                                 table1.setBackgroundColor(Color.RED);
                                 data1 = 1;
