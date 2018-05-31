@@ -1,11 +1,11 @@
 package com.example.huyle.tastyvn.Model;
 
 public class Order {
-    private String ProductId;
-    private String ProductName;
-    private String Quantity;
-    private String Price;
-    private String Image;
+    private String productId;
+    private String productName;
+    private String quantity;
+    private String price;
+    private String image;
 
 
     public Order() {
@@ -13,51 +13,51 @@ public class Order {
     }
 
     public Order(String productId, String productName, String quantity, String price, String image) {
-        ProductId = productId;
-        ProductName = productName;
-        Quantity = quantity;
-        Price = price;
-        Image = image;
+        this.productId = productId;
+       this. productName = productName;
+        this.quantity = quantity;
+        this.price = price;
+        this.image = image;
     }
 
     public String getProductId() {
-        return ProductId;
+        return productId;
     }
 
     public void setProductId(String productId) {
-        ProductId = productId;
+        productId = productId;
     }
 
     public String getProductName() {
-        return ProductName;
+        return productName;
     }
 
     public void setProductName(String productName) {
-        ProductName = productName;
+        productName = productName;
     }
 
     public String getQuantity() {
-        return Quantity;
+        return quantity;
     }
 
     public void setQuantity(String quantity) {
-        Quantity = quantity;
+        quantity = quantity;
     }
 
     public String getPrice() {
-        return Price;
+        return price;
     }
 
     public void setPrice(String price) {
-        Price = price;
+        price = price;
     }
 
     public String getImage() {
-        return Image;
+        return image;
     }
 
     public void setImage(String image) {
-        Image = image;
+        image = image;
     }
 
 }

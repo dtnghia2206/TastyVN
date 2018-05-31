@@ -68,9 +68,10 @@
         android:layout_marginEnd="22dp"
         android:layout_toStartOf="@+id/table3"
         android:background="@android:drawable/spinner_background"
+        android:backgroundTint="@android:color/holo_red_light"
         android:text="Exit"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_green_light"
+
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -109,15 +110,5 @@
         android:layout_alignParentEnd="true"
         android:background="@android:color/holo_orange_light"
         android:text="table 10" />
-
-    <TextView
-        android:id="@+id/txtView"
-        android:layout_width="303dp"
-        android:layout_height="64dp"
-        android:layout_alignEnd="@+id/table4"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
-        android:layout_marginEnd="-203dp"
-        android:text="TextView" />
 
 </RelativeLayout>

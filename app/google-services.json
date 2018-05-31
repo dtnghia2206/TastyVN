@@ -15,12 +15,24 @@
       },
       "oauth_client": [
         {
+          "client_id": "3141274157-sobd39vglon998qet77qo8iqe0vpdve0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.huyle.tastyvn",
+            "certificate_hash": "32daa96543309859548c831ac638c77bb04c983f"
+          }
+        },
+        {
           "client_id": "3141274157-4qe9q4im2n4jj7dfpu2fc73nic9jm2bk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.huyle.tastyvn",
             "certificate_hash": "1c3da52eaa339c07638c7d0c4771e9ead05db00d"
           }
+        },
+        {
+          "client_id": "3141274157-amaphbc6q39jutti1taan9l7tsfthrub.apps.googleusercontent.com",
+          "client_type": 3
         },
         {
           "client_id": "3141274157-amaphbc6q39jutti1taan9l7tsfthrub.apps.googleusercontent.com",

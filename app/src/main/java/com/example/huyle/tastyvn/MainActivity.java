@@ -31,11 +31,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button table10;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        txtView = (TextView)findViewById(R.id.txtView);
+        //txtView = (TextView)findViewById(R.id.txtView);
         table1 = (Button)findViewById(R.id.table1);
         table1.setOnClickListener(this);
         table2 = (Button)findViewById(R.id.table2);
@@ -62,9 +63,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
+
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             Request request = snapshot.getValue(Request.class);
-                            txtView.setText(request.getAddress());
+
+//                            txtView.setText(request.getAddress());
                             if(request.getAddress().equals("1")) {
                                 table1.setBackgroundColor(Color.RED);
                                 data1 = 1;
